@@ -1,0 +1,266 @@
+/* Reset some default browser styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+a {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color and font styles */
+body {
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-image: url('preview.png');
+    /* Add your header background image */
+    background-size: cover;
+    background-position: center center;
+    /* Center the image horizontally and vertically */
+    text-align: center;
+    padding: 90px 0 150px;
+    /* Increase the padding (top: 100px, bottom: 150px) */
+    color: #fff;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.863);
+    /* Header shadow */
+}
+
+/* Header button styles */
+header a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+    /* Transparent or semi-transparent background color */
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth transition */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* Glassy box shadow */
+}
+
+/* Hover effect for buttons */
+header a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Semi-transparent background on hover */
+    color: #333;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+    /* Bigger shadow on hover for a glassy effect */
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Hero section styles */
+#home {
+    background-image: url('bgredd.jpg'); /* Add your background image URL here */
+    background-size: cover;
+    /* Replace with your desired background color */
+    text-align: center;
+    padding: 150px 0; /* Increased padding for the upper half */
+    color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Header shadow */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Add a shadow below the image */
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100%;
+}
+
+.content {
+    display: flex;
+    flex-direction: row; /* Display content side by side */
+    align-items: center;
+}
+
+.text {
+    flex: 1; /* Take up available space */
+    text-align: left; /* Align text to the left */
+    color: #080808; /* Text color */
+}
+
+.text h1 {
+    font-size: 48px; /* Larger font size for the main heading */
+    margin-bottom: 10px;
+    position: relative; /* Position relative to enable the ::before pseudo-element */
+    background-image: linear-gradient(to right, #3498db, #e74c3c); /* Gradient background */
+    -webkit-background-clip: text; /* Clip the text to the gradient */
+    background-clip: text; /* Clip the text to the gradient */
+    color: transparent; /* Make the text transparent to show the gradient */
+    display: flex; /* Enable flexbox layout for icon and text */
+    align-items: center; /* Vertically center icon and text */
+}
+
+.text i {
+    margin-right: 10px; /* Add spacing between the icon and text */
+}
+
+.text p i {
+    font-size: 25px; /* Font size for the subheading (adjusted from 18px) */
+    margin-bottom: 30px;
+    font-family: 'ScriptMTBold', cursive; /* Use the imported font 'ScriptMTBold' */
+}
+
+/* Get Started button styles */
+/* Get Started button styles */
+.text a {
+    display: inline-block;
+    padding: 30px 20px; /* Adjust padding as needed */
+    font-size: 20px; /* Font size for the button text */
+    background: url('pie.png') no-repeat center center, linear-gradient(to bottom, #fdfdfd, #fffafa), linear-gradient(to bottom, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1)); /* Initial background image and gradient */
+    background-size: cover; /* Cover the entire button with the background image */
+    color: transparent; /* Make the text initially transparent */
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 100%;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition without rotation animation */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow for the button */
+    margin-top: 30px; /* Adjust the margin to move the button down */
+}
+
+.text a:hover {
+    color: #fdfdfd; /* Make the text visible on hover */
+    background: linear-gradient(to bottom, rgb(77, 236, 3), rgb(5, 68, 241)); /* Background image and gradient on hover with reduced transparency */
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+}
+
+
+/* Rotation animation for the Get Started button */
+@keyframes rotateAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Add this CSS to style the stats-with-images section */
+#stats-with-images {
+    background-color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.image-item {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.image-item img {
+    width: 60px; /* Adjust the image size as needed */
+    height: 60px;
+}
+
+.stat-item {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.stat-item h4 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.stat-item p {
+    font-size: 16px;
+    color: #666;
+}
+/* Styles for the Features section */
+
+#features {
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 40px 0 80px;
+}
+
+.feature {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.feature img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+
+/* Import the "ScriptMTBold" font */
+@font-face {
+    font-family: 'ScriptMTBold';
+    src: url('ScriptMTBold.ttf') format('truetype'); /* Replace 'ScriptMTBold.ttf' with the actual font file name and format */
+}
+
+/* Apply the animated text effect with the imported font */
+h2[data-text] {
+    position: relative;
+    font-size: 5rem; /* Change the font size to your desired size */
+    text-transform: lowercase; /* Change to lowercase */
+    display: inline-block;
+    overflow: hidden;
+    font-weight: bold; /* Add bold font style */
+    font-family: 'ScriptMTBold', cursive; /* Use the imported font 'ScriptMTBold' */
+}
+
+h2[data-text]::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #d5ebcf;
+    -webkit-text-stroke: 0.3vw #000000;
+    border-right: 2px solid transparent;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+
+@keyframes animate {
+    0%, 10%, 100% {
+        width: 0;
+    }
+    70%, 90% {
+        width: 100%;
+    }
+}
+
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    /* Add responsive styles here */
+}

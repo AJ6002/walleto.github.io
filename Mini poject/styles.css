@@ -1,0 +1,406 @@
+/* Reset some default browser styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in element size */
+}
+
+body {
+    background-image: url('image4.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    background-color: rgba(0, 0, 0, 0.8);
+    line-height: 1.6;
+    color: #ffffff;
+}
+/* Reset some default browser styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Include padding and border in element size */
+}
+
+body {
+        background-image: url('preview.png');
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    background-color: rgba(0, 0, 0, 0.8);
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --clr: #222327;
+}
+
+.navigation {
+    position: relative;
+    width: 400px;
+    height: 70px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.navigation ul {
+    display: flex;
+    width: 350px;
+}
+
+.navigation ul li {
+    position: relative;
+    list-style: none;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+    transition: transform 0.3s; /* Add transition for smooth effect */
+}
+
+.navigation ul li a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    text-decoration: none; /* Remove default underline */
+    color: var(--clr);
+}
+
+.navigation ul li:hover {
+    transform: translateY(-10px); /* Add a translateY effect on hover */
+}
+
+.navigation ul li a .icon {
+    position: relative;
+    display: block;
+    line-height: 75px;
+    font-size: 1.5em;
+    text-align: center;
+    transition: 0.5s;
+    color: var(--clr);
+}
+
+.navigation ul li.active a .icon {
+    transform: translateY(-32px);
+}
+
+.navigation ul li a .text {
+    position: absolute;
+    color: var(--clr);
+    font-weight: 400;
+    font-size: 0.75em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.navigation ul li.active a .text {
+    opacity: 1;
+    transform: translateY(10px);
+}
+
+.indicator {
+    position: absolute;
+    top: -50%;
+    width: 70px;
+    height: 70px;
+    background: tomato;
+    border-radius: 50%;
+    border: 6px solid var(--clr);
+    transition: 0.5s;
+}
+
+.indicator::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -22px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-right-radius: 20px;
+    box-shadow: 1px -10px 0 0 var(--clr);
+}
+
+.indicator::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -22px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-left-radius: 20px;
+    box-shadow: -1px -10px 0 0 var(--clr);
+}
+
+/* Indicator Transitions */
+.navigation ul li:nth-child(1).active ~ .indicator {
+    transform: translateX(calc(70px * 0));
+}
+
+.navigation ul li:nth-child(2).active ~ .indicator {
+    transform: translateX(calc(70px * 1));
+}
+
+.navigation ul li:nth-child(3).active ~ .indicator {
+    transform: translateX(calc(70px * 2));
+}
+
+.navigation ul li:nth-child(4).active ~ .indicator {
+    transform: translateX(calc(70px * 3));
+}
+
+.navigation ul li:nth-child(5).active ~ .indicator {
+    transform: translateX(calc(70px * 4));
+}
+
+/* Header styles */
+/* Header styles */
+header {
+    background: linear-gradient(to right, hwb(253 1% 5%), #f49efc);
+   
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    padding: 50px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center;
+    box-shadow: inset 0px -10px 30px rgba(0, 0, 0, 0.2); /* Add inset shadow here */
+
+}
+
+/* Header button styles */
+
+/* Hero section styles */
+.hero {
+    background-image: url('hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0;
+    color: #ffffff;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.center-image {
+    display: block;
+    margin: 0 auto;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+/* Styling for the "WALLETO" heading */
+/* Apply styling and animation to the "WALLETO" heading */
+/* Apply styling and animation to the "WALLETO" heading */
+h1.walleto-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    font-size: 6em;
+    color: #fff; /* Text color */
+  }
+  
+  h1.walleto-heading::before {
+    content: attr(data-text);
+    position: absolute;
+    color: #fff; /* Text color */
+    width: 350px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid #fff; /* Text color for the border */
+    animation: animate 8s linear infinite;
+    filter: drop-shadow(0 0 20px #fff); /* Drop shadow color */
+  }
+  
+  @keyframes animate {
+    0%, 10%, 100% {
+      width: 0;
+    }
+    70%, 90% {
+      width: 100%;
+    }
+  }
+  
+/* Styling for the "Dive into reports..." text */
+@font-face {
+    font-family: 'ScriptMTBold';
+    src: url('ScriptMTBold.ttf') format('truetype'); /* Replace 'ScriptMTBold.ttf' with the actual font file name and format */
+}
+
+.finances-text {
+    font-size: 24px;
+    font-family: 'ScriptMTBold', cursive; /* Use the imported font 'ScriptMTBold' */
+    color: #ffffff;
+}
+
+/* Apply the "Times New Roman" font to specific elements */
+.hero-content p {
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-family: 'ScriptMTBold', cursive; /* Use the imported font 'ScriptMTBold' */
+}
+
+.wallet-icon {
+    width: 60px;
+    vertical-align: bottom;
+    margin-top: 50px;
+    margin-right: 50px;
+    opacity: 0.99;
+}
+
+
+/* Style for the dropdown menu */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+.card-container {
+    display: flex;
+    justify-content: space-around; /* Adjust the alignment as needed */
+    align-items: center;
+    padding: 20px; /* Add some padding to separate the cards */
+}
+
+.box {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    /* Other styles for the box */
+}
+
+
+
+
+
+
+
+.box {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #060c21;
+  margin: 40px;
+}
+
+.box::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  z-index: -1;
+}
+
+.box::after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  z-index: -2;
+  filter: blur(40px);
+}
+
+.box:nth-child(1)::after,
+.box:nth-child(1)::before {
+  background: linear-gradient(235deg, #89ff00, #010615, #00bcd4);
+  animation: anim 2s linear infinite; 
+}
+.box:nth-child(2)::after,
+.box:nth-child(2)::before {
+  background: linear-gradient(235deg, #ff005e, #010615, #fbff00);
+}
+.box:nth-child(3)::after,
+.box:nth-child(3)::before {
+  background: linear-gradient(235deg, #772aff, #010615, #2196f3);
+}
+
+.box .glass {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  display: block;
+  background: rgba(255,255,255,.1);
+  pointer-events:none;
+}
+
+.box .content {
+  padding: 20px;
+  color: #fff;
+}
+
+@keyframes anim {
+  0%,100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Footer styles */
+footer {
+    background-color: #3734db;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+}
